@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Jualan Panel</title>
+    <title>LIST PANEL BY ARTA</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -116,7 +116,7 @@
     <div class="container">
         <div class="panel">
             <h2>Ram 2GB CPU 40%</h2>
-            <p>1K/Permanen</p>
+            <p>HARGA 1K PERMANEN HANYA DAPET FREE SC</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 2GB CPU 40%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -124,7 +124,7 @@
 
         <div class="panel">
             <h2>Ram 3GB CPU 60%</h2>
-            <p>2K/Permanen</p>
+            <p>HARGA 2K PERMANEN HANYA DAPET FREE SC</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 3GB CPU 60%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -132,7 +132,7 @@
 
         <div class="panel">
             <h2>Ram 4GB CPU 90%</h2>
-            <p>3K/Permanen</p>
+            <p>HARGA 3K PERMANEN HANYA DAPET FREE SC</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 4GB CPU 90%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -140,7 +140,7 @@
 
         <div class="panel">
             <h2>Ram 5GB CPU 120%</h2>
-            <p>4K/Permanen</p>
+            <p>HARGA 4K PERMANEN HANYA DAPET FREE SC</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 5GB CPU 120%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -148,7 +148,7 @@
 
         <div class="panel">
             <h2>Ram 6GB CPU 150%</h2>
-            <p>5K/Permanen</p>
+            <p>5K/Permanen dapet free sc + di pasang in</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 6GB CPU 150%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -156,7 +156,7 @@
 
         <div class="panel">
             <h2>Ram 7GB CPU 180%</h2>
-            <p>6K/Permanen</p>
+            <p>6K/Permanen dapet free sc + di pasang in</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 7GB CPU 180%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -164,7 +164,7 @@
 
         <div class="panel">
             <h2>Ram 8GB CPU 210%</h2>
-            <p>7K/Permanen</p>
+            <p>7K/Permanen dapet free sc + di pasang in</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 8GB CPU 210%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -172,7 +172,7 @@
 
         <div class="panel">
             <h2>Ram 9GB CPU 240%</h2>
-            <p>8K/Permanen</p>
+            <p>8K/Permanen dapet free sc + di pasang in</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 9GB CPU 240%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -180,7 +180,7 @@
 
         <div class="panel">
             <h2>Ram 10GB CPU 310%</h2>
-            <p>10K/Permanen</p>
+            <p>9K/Permanen dapet free sc + di pasang in</p>
             <a href="https://wa.me/6287760185040?text=Order Ram 10GB CPU 310%" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -188,7 +188,7 @@
 
         <div class="panel">
             <h2>Ram & CPU UNLI</h2>
-            <p>5K untuk 10 orang/Permanen</p>
+            <p>10K/Permanen dapet free sc + di pasang in</p>
             <a href="https://wa.me/6287760185040?text=Order Ram & CPU UNLI" class="button">Order</a>
             <button class="button">Keranjang</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
@@ -199,6 +199,13 @@
             <p>5K Free Pasang</p>
             <a href="https://wa.me/6287760185040?text=Order Bot Pushkontak V8" class="button">Order</a>
             <button class="button">Keranjang</button>
+            <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
+        </div>
+                <div class="SC BOT WA">
+            <h2>SC BOT WA VIPP</h2>
+            <p>FITUR BISA BUAT NOKOS BUAT PANEL DAN DLL</p>
+            <a href="https://wa.me/6287760185040?text=Order Ram & CPU UNLI" class="button">Order</a>
+            <button class="button">HARGA SC 20K</button>
             <button class="button payment-button" onclick="showPopup()">Metode Pembayaran</button>
         </div>
     </div>
