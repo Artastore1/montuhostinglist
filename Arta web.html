@@ -1,198 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price List Panel Bot WhatsApp</title>
+    <title>Montu Hosting Store</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: #fff;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
 
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #333;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            background: #2b2b2b;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
 
-        h1 {
-            text-align: center;
-        }
-
-        .panel {
+        .logo {
+            width: 150px;
+            height: 150px;
             margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #555;
-            border-radius: 5px;
-            background-color: #444;
+            cursor: pointer;
+            animation: pulse 2s infinite;
         }
 
-        .panel h2 {
-            margin-bottom: 10px;
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
 
-        .panel p {
-            margin-bottom: 15px;
+        .popup {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 20px);
+            width: 90%;
+            max-width: 350px;
+            background-color: #333;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            z-index: 10;
+            text-align: left;
         }
 
-        .order-button {
-            text-align: center;
+        .popup p, .popup ul {
+            margin: 0;
+            font-size: 14px;
+            color: #f4f4f4;
         }
 
-        .order-button a {
-            padding: 5px 10px;
-            background-color: #007bff;
-            color: #fff;
+        .popup ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .popup ul li {
+            padding: 5px 0;
+        }
+
+        .popup a {
+            color: #1E90FF;
             text-decoration: none;
-            border-radius: 3px;
-            transition: background-color 0.3s ease;
         }
 
-        .order-button a:hover {
-            background-color: #0056b3;
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 9;
         }
 
-        .payment-button {
-            text-align: center;
-            margin-top: 20px;
+        .tutorial {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            z-index: 11;
+            color: #f4f4f4;
         }
 
-        .payment-button button {
+        .tutorial p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        button {
             padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
+            background-color: #1E90FF;
+            color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
         }
 
-        .payment-button button:hover {
-            background-color: #0056b3;
-        }
-
-        .qris {
-            display: none;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .qris img {
-            max-width: 200px;
-            height: auto;
+        button:hover {
+            background-color: #1C86EE;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <h1>Price List Panel Bot WhatsApp</h1>
-        <div class="panel">
-            <h2>RAM 1GB CPU 40%</h2>
-            <p>1K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%201GB%20CPU%2040%25">Pesan Sekarang</a>
-            </div>
+        <img src="https://telegra.ph/file/f6a6899b0024c3305993e.jpg" alt="Montu Hosting Logo" class="logo" id="logo">
+        <div class="popup" id="popup">
+            <p><strong>MONTU NETWORK MENYEDIAKAN BERBAGAI KEPERLUAN HOSTING</strong></p>
+            <ul>
+                <li>ADMIN PANEL 1 BULAN 5K</li>
+                <li>ADMIN PANEL PRIVATE PERMANEN 15K</li>
+                <li>PT PANEL 1 BULAN 17K</li>
+                <li>PT PANEL PRIVATE PERMANEN 20K</li>
+                <li>OWNER PANEL PRIVATE PERMANEN 30K</li>
+                <li>JASA RENAME SC 5K - 7K</li>
+                <li>JASA PASANG SC 2K - 4K</li>
+                <li>JASA INSTALL THEME PANEL PTERODACTYL 3K</li>
+                <li>JASA INSTALL PANEL 7K</li>
+                <li>HOSTING SAMP</li>
+                <li>PANEL 1GB - 10GB</li>
+                <li>PANEL UNLIMITED</li>
+                <li>RESELLER PANEL 1 BULAN 4K</li>
+                <li>RESELLER PANEL PERMANEN 7K</li>
+                <li><strong>LIST HARGA PANEL BOT</strong></li>
+                <li>📮 RAM 1GB 1.000/BULAN</li>
+                <li>📮 RAM 2GB 2.000/BULAN</li>
+                <li>📮 RAM 3GB 3.000/BULAN</li>
+                <li>📮 RAM 4GB 4.000/BULAN</li>
+                <li>📮 RAM 5GB 5.000/BULAN</li>
+                <li>📮 RAM 6GB 6.000/BULAN</li>
+                <li>📮 RAM 7GB 7.000/BULAN</li>
+                <li>📮 RAM 8GB 8.000/BULAN</li>
+                <li>📮 RAM 9GB 9.000/BULAN</li>
+                <li>📮 RAM 10GB 10.000/BULAN</li>
+                <li>📮 UNLI 15.000/BULLAN</li>
+                <li><strong>LIST HARGA HOSTING SAMP</strong></li>
+                <li>📦PAKET 1: SLOT 55, RAM 18GB, CPU 100%, HARGA: 5K</li>
+                <li>📦PAKET 2: SLOT 100, RAM 25GB, CPU 100%, HARGA: 10K</li>
+                <li>📦PAKET 3: SLOT 150, RAM 35GB, CPU 100%, HARGA: 15K</li>
+                <li>📦PAKET 4: SLOT 220, RAM UNLI, CPU UNLI, HARGA: 20K</li>
+            </ul>
+            <p>Minat? Hubungi <a href="https://wa.me/6289530292518">WhatsApp</a></p>
+            <p>*`TESTI DI CHANNEL WA`*: <a href="https://whatsapp.com/channel/0029VakzKOQHgZWi7pmIKf1r">Klik Disini</a></p>
+            <p>`GRUP BEBAS SHER¹`: <a href="https://chat.whatsapp.com/GSpxNl2yfxkBrcrCSPBQgJ">Klik Disini</a></p>
         </div>
-        <div class="panel">
-            <h2>RAM 2GB CPU 60%</h2>
-            <p>2K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%202GB%20CPU%2060%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM 3GB CPU 90%</h2>
-            <p>3K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%203GB%20CPU%2090%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM 4GB CPU 120%</h2>
-            <p>4K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%204GB%20CPU%20120%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM 5GB CPU 150%</h2>
-            <p>5K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%205GB%20CPU%20150%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM 6GB CPU 180%</h2>
-            <p>6K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%206GB%20CPU%20180%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM 7GB CPU 210%</h2>
-            <p>7K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%207GB%20CPU%20210%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM 8GB CPU 240%</h2>
-            <p>8K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%208GB%20CPU%20240%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM 9GB CPU 280%</h2>
-            <p>9K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%209GB%20CPU%20280%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM 10GB CPU 310%</h2>
-            <p>10K/PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%2010GB%20CPU%20310%25">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="panel">
-            <h2>RAM & CPU UNLI</h2>
-            <p> 5K AJA BUAT 10 ORANG /PERMANEN</p>
-            <div class="order-button">
-                <a href="https://wa.me/6287760185040?text=Saya%20setuju%20dengan%20pemesanan%20panel%20RAM%20dan%20CPU%20UNLI">Pesan Sekarang</a>
-            </div>
-        </div>
-        <div class="payment-button">
-            <button onclick="toggleQRIS()">Metode Pembayaran</button>
-            <div class="qris" id="qris">
-                <p>METODE PEMBAYARAN ARTA STORE</p>
-                <p>Nomor Dana: 087760185040</p>
-                <img src="https://telegra.ph/file/19d615944f9027ee3995f.png" alt="QRIS">
-                <p>JANGAN LUPA SS BUKTI TF YA COK</p>
-            </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="tutorial" id="tutorial">
+            <p>tekan logo di bawah untuk melihat list jualan saya !!</p>
+            <button id="gotIt">Got it!</button>
         </div>
     </div>
 
     <script>
-        function toggleQRIS() {
-            var qris = document.getElementById("qris");
-            if (qris.style.display === "none") {
-                qris.style.display = "block";
-            } else {
-                qris.style.display = "none";
-            }
+        const logo = document.getElementById('logo');
+        const popup = document.getElementById('popup');
+        const overlay = document.getElementById('overlay');
+        const tutorial = document.getElementById('tutorial');
+        const gotItButton = document.getElementById('gotIt');
+
+        logo.addEventListener('click', () => {
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+        });
+
+        overlay.addEventListener('click', () => {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        });
+
+        window.onload = function () {
+            tutorial.style.display = 'block';
+            overlay.style.display = 'block';
         }
+
+        gotItButton.addEventListener('click', () => {
+            tutorial.style.display = 'none';
+            overlay.style.display = 'none';
+        });
     </script>
 </body>
-
 </html>
